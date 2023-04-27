@@ -21,5 +21,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /myapp
 ADD Gemfile /myapp/Gemfile
 ADD Gemfile.lock /myapp/Gemfile.lock
-RUN bundle install
+COPY package.json /myapp/package.json
+COPY yarn.lock /myapp/yarn.lock
+RUN bundle install && yarn install
 ADD . /myapp
