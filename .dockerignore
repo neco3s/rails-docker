@@ -4,3 +4,7 @@
 **/.gitkeep
 **/Dockerfile
 docker-compose.yml
+log/*
+tmp/*
+vendor/bundle
+node_modules
