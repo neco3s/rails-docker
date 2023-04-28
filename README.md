@@ -1,24 +1,15 @@
-# README
+# 環境構築手順
+1. レポジトリーをローカルに持ってくる
+```
+git clone <this repo>
+```
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+2. レポジトリーのディレクトリに遷移
+```
+cd <this repo>
+```
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+3. コンテナの作成と起動(初回時はdocker image作成のためbuildも実行されます)
+```
+docker-compose up
+```
